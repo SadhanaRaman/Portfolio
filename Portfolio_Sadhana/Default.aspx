@@ -14,8 +14,8 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<%--    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>--%>
      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <%-- <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>   --%>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -221,20 +221,21 @@ $('#myModalValid').modal({
                                              </br>
                             <span style="font-size: 3em;">
                            <a href="https://www.linkedin.com/in/sadhana-kalyanaraman-91a55a61/" target="_blank">  <i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.linkedin.com/in/sadhana-kalyanaraman-91a55a61/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/KalyanaSadhana" target="_blank"><i class="fab fa-twitter-square"></i></a>
                             </span>
                             </br>
             </div>
 
-
+            <article>
             <div class="desc">
                 <h1 class="text-center">Hey there!</h1>
                 </br>
 
                                                 <div class="rows">
                                                     <div class="col-xs-12">
-
-                                                        <img class="img img-responsive img-circle" src="Sadhana.jpg" alt="Sadhu">
+                                                        <figure>
+                                                        <img class="img img-responsive img-circle" src="Sadhana.jpg" alt="Sadhu" height="450" width="450">
+                                                        </figure>
                                                     </div>
                                                 </div>
 
@@ -260,7 +261,7 @@ $('#myModalValid').modal({
 
                 </br>
             </div>
-
+            </article>
             <div id="Feedback" class="font">
                 <p><em class="text">Take a moment to tell me what you think, is there anything you see that can be improved? Or is there anything I can help with in your own website/project? </em></p>
                 <p><em class="text">Let me know.</em></p>
@@ -269,13 +270,13 @@ $('#myModalValid').modal({
                 <asp:UpdatePanel ID="up1" runat="server">
                     <ContentTemplate>
                         <label id="Name" class="Label" for="TxtName">Name:</label>
-                        <asp:TextBox ID="TxtName" Rows="1" Columns="25" TextMode="multiline" runat="server" />
+                        <asp:TextBox ID="TxtName" Rows="1" Columns="25" TextMode="multiline" runat="server" placeholder="Enter your Name"/>
                         </br>
                              <label id="Email" class="Label" for="TxtEmail">Email:</label>
-                        <asp:TextBox ID="TxtEmail" Rows="1" Columns="25" TextMode="multiline" runat="server" />
+                        <asp:TextBox ID="TxtEmail" Rows="1" Columns="25" TextMode="multiline" runat="server" placeholder="myemail@domain.com" />
                         </br>
                                  <label id="Comments" class="Label" for="TxtComments">Comments:</label>
-                        <asp:TextBox ID="TxtComments" Rows="3" Columns="25" TextMode="multiline" runat="server" />
+                        <asp:TextBox ID="TxtComments" Rows="3" Columns="25" TextMode="multiline" runat="server" placeholder="Your comments mean a lot :) Please let me know how you feel." />
                         </br>
                             <%--<label id="Comments" class="Label" for="TxtComments">Comments:</label>
                                 <asp:TextBox ID="TxtComments" Rows="3" Columns="25" TextMode="multiline" runat="server" />
