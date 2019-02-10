@@ -270,13 +270,13 @@ $('#myModalValid').modal({
                 <asp:UpdatePanel ID="up1" runat="server">
                     <ContentTemplate>
                         <label id="Name" class="Label" for="TxtName">Name:</label>
-                        <asp:TextBox ID="TxtName" Rows="1" Columns="25" TextMode="multiline" runat="server" placeholder="Enter your Name"/>
+                        <asp:TextBox ID="TxtName" Rows="1" Columns="35" TextMode="multiline" runat="server" placeholder="Enter your Name"/>
                         </br>
                              <label id="Email" class="Label" for="TxtEmail">Email:</label>
-                        <asp:TextBox ID="TxtEmail" Rows="1" Columns="25" TextMode="multiline" runat="server" placeholder="myemail@domain.com" />
+                        <asp:TextBox ID="TxtEmail" Rows="1" Columns="35" TextMode="multiline" runat="server" placeholder="myemail@domain.com" />
                         </br>
                                  <label id="Comments" class="Label" for="TxtComments">Comments:</label>
-                        <asp:TextBox ID="TxtComments" Rows="3" Columns="25" TextMode="multiline" runat="server" placeholder="Your comments mean a lot :) Please let me know how you feel." />
+                        <asp:TextBox ID="TxtComments" Rows="3" Columns="35" TextMode="multiline" runat="server" placeholder="Your comments mean a lot :) Please let me know how you feel." />
                         </br>
                             <%--<label id="Comments" class="Label" for="TxtComments">Comments:</label>
                                 <asp:TextBox ID="TxtComments" Rows="3" Columns="25" TextMode="multiline" runat="server" />
